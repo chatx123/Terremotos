@@ -1,0 +1,42 @@
+public class Victima extends Persona
+{
+    private String direccion;
+    private String telf;
+    private Municipio municipio;
+
+    public Victima()
+    {super ();}
+
+    public Victima(String Doc,String Nomb,String Apellido,String Gen,String Edad,String direccion, String telf, Municipio municipio)
+    {
+        super(Doc,Nomb,Apellido,Gen,Edad);
+
+       this.direccion=direccion;
+       this.telf=telf;
+       this.municipio=municipio;
+    }
+    public String getDireccion()
+    {
+        return this.direccion;
+    }
+    public void setDireccion(String direccion)
+    {
+        this.direccion=direccion;
+    }
+    public String getTelf()
+    {
+        return this.telf;
+    }
+    public void setTelf(String Telf)
+    {
+        this.telf=telf;
+    }
+    public Municipio getMunicipio()
+    {
+        return this.municipio;
+    }
+    public void setMunicipio(Municipio municipio)
+    {
+        this.municipio=municipio;
+    }
+}

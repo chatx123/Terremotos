@@ -1,0 +1,40 @@
+public class Municipio
+{
+    private String Cod;
+    private String Nombre;
+    private Departamento departamento;
+
+   public Municipio()
+   {}
+
+   public Municipio(String Cod,String Nombre,Departamento departamento)
+   {
+       this.Cod=Cod;
+       this.Nombre=Nombre;
+       this.departamento=departamento;
+    }
+    public String getCod()
+    {
+        return this.Cod;
+    }
+    public void setCod(String Cod)
+    {
+        this.Cod=Cod;
+    }
+    public String getNombre()
+    {
+        return this.Nombre;
+    }
+    public void setNombre(String Nombre)
+    {
+        this.Nombre=Nombre;
+    }
+    public Departamento getDepartamento()
+    {
+        return this.departamento;
+    }
+    public void setDepartamento(Departamento departamento)
+    {
+        this.departamento=departamento;
+    }
+}

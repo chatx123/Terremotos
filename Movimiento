@@ -1,0 +1,62 @@
+public class Persona
+{
+    private String Doc;
+    private String Nomb;
+    private String Apellido;
+    private String Gen;
+    private String Edad;
+
+    public Persona()
+    {
+    }
+
+    public Persona(String Doc,String Nomb, String Apellido, String Gen, String Edad)
+    {
+        this.Doc=Doc;
+        this.Nomb=Nomb;
+        this.Apellido=Apellido;
+        this.Gen=Gen;
+        this.Edad=Edad;
+    }
+    public String getDoc()
+    {
+        return this.Doc;
+    }
+    public void setDoc(String Doc)
+    {
+        this.Doc=Doc;
+    }
+    public String getNomb()
+    {
+        return this.Nomb;
+    }
+    public void setNomb(String Nomb)
+    {
+        this.Nomb=Nomb;
+    }
+    public String getApellido()
+    {
+        return this.Apellido;
+    }
+    public void setApellido(String Apellido)
+    {
+        this.Apellido=Apellido;
+    }
+    public String getGen()
+    {
+        return this.Gen;
+    }
+    public void setGen(String Gen)
+    {
+        this.Gen=Gen;
+    }
+    public String getEdad()
+    {
+        return this.Edad;
+    }
+    public void setEdad(String Edad)
+    {
+        this.Edad=Edad;
+    }
+
+}

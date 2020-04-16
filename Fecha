@@ -1,0 +1,64 @@
+public class Fecha
+{
+  private int Dia;
+  private int Mes;
+  private int Año;
+
+  public Fecha()
+  {}
+
+  public Fecha(int PDias, int PMes, int PAño)
+
+  {
+      this.Dia=Dia;
+      this.Mes=Mes;
+      this.Año=Año;
+    }
+
+    public int getDia()
+    {
+        return this.Dia;
+    }
+    public void setDia(int Dia)
+    {
+        this.Dia=Dia;
+    }
+    public int getMes()
+    {
+        return this.Mes;
+    }
+    public void setMes(int Mes)
+    {
+        this.Mes=Mes;
+    }
+    public int getAño()
+    {
+        return this.Año;
+    }
+    public void setAño(int Año)
+    {
+        this.Año=Año;
+    }
+
+    public int darDiferenciaEnMeses(Fecha pFecha)
+    {
+        int dif=0;
+        int otroAño=0;
+        int otroMes=0;
+        int otroDia=0;
+
+        dif= 12*(otroAño-Año)+(otroMes-Mes);
+
+        if(otroDia<Dia)
+        {
+            dif--;
+        }
+        return dif;
+    }
+    public String toString()
+    {
+        return Dia+ "-" + Mes + "-" + Año;
+    }
+
+
+}

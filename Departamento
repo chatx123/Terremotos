@@ -1,0 +1,44 @@
+import java.util.List;
+import java.util.ArrayList;
+
+public class Departamento
+{
+   private String Cod;
+   private String Nombre;
+   private List<Municipio> municipios;
+
+   public Departamento()
+   {}
+
+   public Departamento(String Cod,String Nombre,List<Municipio> municipios)
+   {
+       this.Cod=Cod;
+       this.Nombre=Nombre;
+       this.municipios= new ArrayList<Municipio>();
+    }
+    public String getCod()
+    {
+        return this.Cod;
+    }
+    public void setCod(String Cod)
+    {
+        this.Cod=Cod;
+    }
+    public String getNombre()
+    {
+        return this.Nombre;
+    }
+    public void setNombre(String Nombre)
+    {
+        this.Nombre=Nombre;
+    }
+    public List<Municipio> getMunicipios()
+    {
+        return this.municipios;
+    }
+    public void setMunicipios(List<Municipio> municipios)
+    {
+        this.municipios=municipios;
+    }
+
+}
